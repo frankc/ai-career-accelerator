@@ -512,6 +512,19 @@ with st.form("engineer_ai_assessment"):
     
     # Open-ended questions
     st.markdown("### 💭 Your Thoughts")
+    
+    strengths = st.text_area(
+        "What are your key strengths and unique capabilities?",
+        placeholder="What skills, experiences, or qualities make you valuable? (e.g., problem-solving abilities, domain expertise, leadership experience, technical skills...)",
+        height=100
+    )
+    
+    areas_to_develop = st.text_area(
+        "What skills or knowledge areas do you want to develop?",
+        placeholder="Where do you see gaps in your current skillset? What would you like to learn or improve?",
+        height=100
+    )
+    
     biggest_challenge = st.text_area(
         "What's your biggest challenge in making this career pivot?",
         placeholder="What's holding you back or worrying you most about transitioning to AI?",
@@ -613,6 +626,8 @@ if submitted:
                 "py4ai_course_interest": py4ai_course_interest
             },
             "open_responses": {
+                "strengths": strengths,
+                "areas_to_develop": areas_to_develop,
                 "biggest_challenge": biggest_challenge,
                 "most_exciting": most_exciting,
                 "ideal_outcome": ideal_outcome
