@@ -170,5 +170,233 @@
       "most_exciting": "create startup",
       "ideal_outcome": "ceo"
     }
+  },
+  {
+    "timestamp": "2025-10-02T12:08:15.140200",
+    "personal_info": {
+      "name": "Frank Coyle",
+      "email": "coyle@lyle.smu.edu",
+      "linkedin": "",
+      "location": "DALLAS",
+      "engineering_discipline": "Mechanical",
+      "years_experience": "10-15 years",
+      "previous_title": "boss",
+      "company_industry": "Southern Methodist University",
+      "layoff_date": "Currently employed",
+      "financial_runway": "<3 months"
+    },
+    "situation": {
+      "employment_status": "Actively job hunting",
+      "job_timeline": "Need job ASAP",
+      "urgency_level": "Just exploring",
+      "geographic_flexibility": "Must stay local",
+      "industry_pivot": "Stay in same industry"
+    },
+    "use_case": {
+      "selected": "Technical Translators",
+      "details": {
+        "description": "Strong technical background, wants to bridge engineering and AI",
+        "goal": "Become AI implementation specialists in their engineering domain",
+        "timeline": "6-12 months for specialization",
+        "focus": "Industry-specific AI applications, technical sales, consulting",
+        "example": "Mechanical Engineer → AI-powered predictive maintenance consultant"
+      }
+    },
+    "technical_background": {
+      "programming_exp": "None",
+      "programming_languages": [],
+      "python_level": "Never used",
+      "data_analysis_exp": "None",
+      "math_comfort": "Comfortable",
+      "learning_preference": "Hands-on projects"
+    },
+    "ai_knowledge": {
+      "ai_understanding": "Complete beginner",
+      "ai_tools_used": [],
+      "ai_interests": [],
+      "biggest_concern": "Job displacement fears"
+    },
+    "learning_preferences": {
+      "study_time": "<5 hours",
+      "learning_formats": [],
+      "timeline_preference": "3-Month Sprint",
+      "audio_context": [],
+      "video_preference": "Short clips (<10min)",
+      "hands_on_style": "Theory first"
+    },
+    "career_goals": {
+      "pivot_motivation": "Financial necessity",
+      "target_roles": [],
+      "income_expectations": "Significant decrease acceptable",
+      "industry_target": "Stay in current industry",
+      "role_preference": "Individual contributor"
+    },
+    "resources": {
+      "learning_budget": "$0 - free only",
+      "equipment_status": "Need new computer",
+      "home_environment": "Poor/distracting",
+      "family_support": "Unsupportive"
+    },
+    "py4ai_interest": {
+      "python_ai_interest": "Curious",
+      "py4ai_course_interest": "Not sure what this is"
+    },
+    "open_responses": {
+      "biggest_challenge": "",
+      "most_exciting": "",
+      "ideal_outcome": ""
+    }
+  },
+  {
+    "timestamp": "2025-10-02T12:26:08.002900",
+    "personal_info": {
+      "name": "frank coyle",
+      "email": "f@gmail.com",
+      "linkedin": "",
+      "location": "",
+      "engineering_discipline": "Industrial",
+      "years_experience": "15+ years",
+      "previous_title": "boss",
+      "company_industry": "",
+      "layoff_date": "Currently employed",
+      "financial_runway": "<3 months"
+    },
+    "situation": {
+      "employment_status": "Actively job hunting",
+      "job_timeline": "Need job ASAP",
+      "urgency_level": "Just exploring",
+      "geographic_flexibility": "Must stay local",
+      "industry_pivot": "Stay in same industry"
+    },
+    "use_case": {
+      "selected": "Implement AI in Engineering Practice",
+      "details": {
+        "description": "Strong technical background, wants to bridge engineering and AI",
+        "goal": "Become AI implementation specialists in their engineering domain",
+        "timeline": "6-12 months for specialization",
+        "focus": "Industry-specific AI applications, technical sales, consulting",
+        "example": "Mechanical Engineer → AI-powered predictive maintenance consultant"
+      }
+    },
+    "technical_background": {
+      "programming_exp": "None",
+      "programming_languages": [],
+      "python_level": "Never used",
+      "data_analysis_exp": "None",
+      "math_comfort": "Comfortable",
+      "learning_preference": "Hands-on projects"
+    },
+    "ai_knowledge": {
+      "ai_understanding": "Complete beginner",
+      "ai_tools_used": [],
+      "ai_interests": [],
+      "biggest_concern": "Job displacement fears"
+    },
+    "learning_preferences": {
+      "study_time": "<5 hours",
+      "learning_formats": [],
+      "timeline_preference": "3-Month Sprint",
+      "audio_context": [],
+      "video_preference": "Short clips (<10min)",
+      "hands_on_style": "Theory first"
+    },
+    "career_goals": {
+      "pivot_motivation": "Financial necessity",
+      "target_roles": [],
+      "income_expectations": "Significant decrease acceptable",
+      "industry_target": "Stay in current industry",
+      "role_preference": "Individual contributor"
+    },
+    "resources": {
+      "learning_budget": "$0 - free only",
+      "equipment_status": "Need new computer",
+      "home_environment": "Poor/distracting",
+      "family_support": "Unsupportive"
+    },
+    "py4ai_interest": {
+      "python_ai_interest": "Curious",
+      "py4ai_course_interest": "Not sure what this is"
+    },
+    "open_responses": {
+      "biggest_challenge": "",
+      "most_exciting": "",
+      "ideal_outcome": ""
+    }
+  },
+  {
+    "timestamp": "2025-10-02T12:33:45.434136",
+    "personal_info": {
+      "name": "frank coyle",
+      "email": "roger@anthropic.ai",
+      "linkedin": "",
+      "location": "",
+      "engineering_discipline": "Industrial",
+      "years_experience": "15+ years",
+      "previous_title": "manager",
+      "company_industry": "",
+      "layoff_date": "Currently employed",
+      "financial_runway": "<3 months"
+    },
+    "situation": {
+      "employment_status": "Actively job hunting",
+      "job_timeline": "Need job ASAP",
+      "urgency_level": "Just exploring",
+      "geographic_flexibility": "Must stay local",
+      "industry_pivot": "Stay in same industry"
+    },
+    "use_case": {
+      "selected": "Implement AI in Engineering Practice",
+      "details": {
+        "description": "Strong technical background, wants to bridge engineering and AI",
+        "goal": "Become AI implementation specialists in their engineering domain",
+        "timeline": "6-12 months for specialization",
+        "focus": "Industry-specific AI applications, technical sales, consulting",
+        "example": "Mechanical Engineer → AI-powered predictive maintenance consultant"
+      }
+    },
+    "technical_background": {
+      "programming_exp": "None",
+      "programming_languages": [],
+      "python_level": "Never used",
+      "data_analysis_exp": "None",
+      "math_comfort": "Comfortable",
+      "learning_preference": "Hands-on projects"
+    },
+    "ai_knowledge": {
+      "ai_understanding": "Complete beginner",
+      "ai_tools_used": [],
+      "ai_interests": [],
+      "biggest_concern": "Job displacement fears"
+    },
+    "learning_preferences": {
+      "study_time": "<5 hours",
+      "learning_formats": [],
+      "timeline_preference": "3-Month Sprint",
+      "audio_context": [],
+      "video_preference": "Short clips (<10min)",
+      "hands_on_style": "Theory first"
+    },
+    "career_goals": {
+      "pivot_motivation": "Financial necessity",
+      "target_roles": [],
+      "income_expectations": "Significant decrease acceptable",
+      "industry_target": "Stay in current industry",
+      "role_preference": "Individual contributor"
+    },
+    "resources": {
+      "learning_budget": "$0 - free only",
+      "equipment_status": "Need new computer",
+      "home_environment": "Poor/distracting",
+      "family_support": "Unsupportive"
+    },
+    "py4ai_interest": {
+      "python_ai_interest": "Curious",
+      "py4ai_course_interest": "Not sure what this is"
+    },
+    "open_responses": {
+      "biggest_challenge": "",
+      "most_exciting": "",
+      "ideal_outcome": ""
+    }
   }
 ]

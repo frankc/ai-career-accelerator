@@ -138,42 +138,42 @@ FULL DATA (JSON)
 
 # Define engineer use cases with detailed information
 ENGINEER_USE_CASES = {
-    "Technical Translators": {
+    "Implement AI in Engineering Practice": {
         "description": "Strong technical background, wants to bridge engineering and AI",
         "goal": "Become AI implementation specialists in their engineering domain",
         "timeline": "6-12 months for specialization",
         "focus": "Industry-specific AI applications, technical sales, consulting",
         "example": "Mechanical Engineer → AI-powered predictive maintenance consultant"
     },
-    "Data-Driven Analysts": {
+    "Apply AI to Data Analysis": {
         "description": "Some data analysis experience, wants to go deeper into AI/ML",
         "goal": "Transition to data scientist or AI analyst roles",
         "timeline": "6-18 months for comprehensive skills",
         "focus": "Statistics, machine learning, data visualization, Python proficiency",
         "example": "Process Engineer → Manufacturing AI Data Scientist"
     },
-    "Strategic Pivoteurs": {
+    "Management/Strategic Planning/Business Applications": {
         "description": "Senior engineers looking for management/strategy roles in AI",
         "goal": "AI project management, product management, strategic roles",
         "timeline": "3-6 months for business understanding",
         "focus": "AI business applications, project management, strategic thinking",
         "example": "Engineering Manager → AI Product Strategy Director"
     },
-    "Practical Implementers": {
+    "Practical Implementation Using AI Tools": {
         "description": "Hands-on engineers wanting to implement AI in current industry",
         "goal": "Stay in industry but become the AI expert",
         "timeline": "3-9 months for applied skills",
         "focus": "Industry-specific AI tools, automation, practical applications",
         "example": "Civil Engineer → Smart Infrastructure AI Specialist"
     },
-    "Entrepreneur Builders": {
+    "Entrepreneur/Build AI-Powered Business": {
         "description": "Want to start AI-related business or consulting practice",
         "goal": "Build AI-powered solutions or services",
         "timeline": "6-18 months for comprehensive understanding",
         "focus": "Business + technical skills, market understanding, networking",
         "example": "Aerospace Engineer → AI-powered drone consulting startup"
     },
-    "Career Survivors": {
+    "Rapid Skill Acquisition to Compete in Job Market": {
         "description": "Need immediate employment, AI as job security strategy",
         "goal": "Quick AI literacy for job market competitiveness",
         "timeline": "1-3 months for basic competency",
@@ -240,12 +240,31 @@ This assessment is designed specifically for engineers navigating career transit
 > *Applied to engineering: Every setback is data for your next optimization.*
 """)
 
+# Career Path Preview Section - OUTSIDE the form for dynamic updates
+st.markdown("---")
+st.subheader("🎯 Step 1: Preview Career Paths")
+st.write("**Explore the different career paths below, then select yours in the form:**")
+
+# Create expandable previews for each career path
+for use_case_name, use_case_info in ENGINEER_USE_CASES.items():
+    with st.expander(f"📍 {use_case_name}"):
+        col1, col2 = st.columns(2)
+        with col1:
+            st.write(f"**Description:** {use_case_info['description']}")
+            st.write(f"**Goal:** {use_case_info['goal']}")
+            st.write(f"**Example:** {use_case_info['example']}")
+        with col2:
+            st.write(f"**Focus Areas:** {use_case_info['focus']}")
+            st.write(f"**Timeline:** {use_case_info['timeline']}")
+
+st.markdown("---")
+
 # Main assessment form
 with st.form("engineer_ai_assessment"):
     st.subheader("📝 AI Career Pivot Assessment")
     
     # Helpful instruction box
-    st.info("**📋 Instructions:** Please complete all sections below. Use Tab or mouse to navigate between fields. Click the '🚀 Create My AI Career Plan' button at the bottom when you're finished.")
+    st.warning("**⚠️ IMPORTANT:** Please complete ALL sections before submitting. If you accidentally press Enter in a text field, the form may submit prematurely. Use Tab or your mouse to move between fields. Only click the '🚀 Create My AI Career Plan' button at the very bottom when you've completed everything.")
     
     # Personal & Professional Context
     st.markdown("### 👤 Personal & Professional Background")
@@ -309,26 +328,12 @@ with st.form("engineer_ai_assessment"):
         
     # Use Case Selection
     st.markdown("### 🎯 Which Career Path Resonates Most?")
+    st.write("*(Review the career path descriptions above, then select your choice here)*")
     selected_use_case = st.radio(
-        "Choose the path that best describes your goals:",
+        "Select the path that best describes your goals:",
         list(ENGINEER_USE_CASES.keys()),
-        help="This will determine your personalized learning plan and focus areas",
-        index=None
+        help="Choose the career path that best matches your situation"
     )
-    
-    # Show details of selected use case - dynamically updates
-    if selected_use_case:
-        st.info(f"**Selected Path:** {selected_use_case}")
-        use_case_info = ENGINEER_USE_CASES[selected_use_case]
-        
-        col1, col2 = st.columns(2)
-        with col1:
-            st.write(f"**Description:** {use_case_info['description']}")
-            st.write(f"**Goal:** {use_case_info['goal']}")
-            st.write(f"**Example:** {use_case_info['example']}")
-        with col2:
-            st.write(f"**Focus Areas:** {use_case_info['focus']}")
-            st.write(f"**Timeline:** {use_case_info['timeline']}")
     
     # Technical Background
     st.markdown("### 🔧 Technical Background")
@@ -428,20 +433,6 @@ with st.form("engineer_ai_assessment"):
             "Hands-on Learning Style",
             ["Theory first", "Immediate practice", "Project-based", "Experiment-driven", "Guided tutorials"]
         )
-    
-    # Show selected timeline plan - dynamically updates
-    if timeline_preference:
-        st.markdown(f"### 📅 Your Selected Timeline: {timeline_preference}")
-        plan_info = TIMELINE_PLANS[timeline_preference]
-        
-        st.info(f"**{plan_info['subtitle']}**")
-        col1, col2 = st.columns(2)
-        with col1:
-            st.write(f"**Focus:** {plan_info['focus']}")
-        with col2:
-            st.write("**Structure:**")
-            for item in plan_info['structure']:
-                st.write(f"• {item}")
     
     # Career Goals
     st.markdown("### 🎯 Career Pivot Goals")
@@ -544,7 +535,18 @@ with st.form("engineer_ai_assessment"):
 
 # Handle form submission
 if submitted:
-    if name and email and engineering_discipline and years_experience and previous_title:
+    # Check ALL required fields before processing
+    if not name:
+        st.error("❌ Please enter your name before submitting.")
+    elif not email:
+        st.error("❌ Please enter your email before submitting.")
+    elif not engineering_discipline:
+        st.error("❌ Please select your engineering discipline before submitting.")
+    elif not years_experience:
+        st.error("❌ Please select your years of experience before submitting.")
+    elif not previous_title:
+        st.error("❌ Please enter your previous job title before submitting.")
+    elif name and email and engineering_discipline and years_experience and previous_title:
         # Create comprehensive assessment data
         assessment_data = {
             "timestamp": datetime.now().isoformat(),
@@ -642,7 +644,7 @@ if submitted:
         
         # Success message and personalized plan
         if email_sent:
-            st.success(f"✅ Thank you, {name}! Your assessment has been saved and Dr. C has been notified at coyle@smu.edu.")
+            st.success(f"✅ Thank you, {name}! Your profile is under review and a plan will be sent to you at {email}.")
             st.balloons()
         else:
             st.warning(f"✅ Thank you, {name}! Your assessment was recorded (but email notification failed - check logs).")
