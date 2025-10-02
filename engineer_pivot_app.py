@@ -244,6 +244,9 @@ This assessment is designed specifically for engineers navigating career transit
 with st.form("engineer_ai_assessment"):
     st.subheader("📝 AI Career Pivot Assessment")
     
+    # Helpful instruction box
+    st.info("**📋 Instructions:** Please complete all sections below. Use Tab or mouse to navigate between fields. Click the '🚀 Create My AI Career Plan' button at the bottom when you're finished.")
+    
     # Personal & Professional Context
     st.markdown("### 👤 Personal & Professional Background")
     col1, col2 = st.columns(2)
@@ -309,10 +312,11 @@ with st.form("engineer_ai_assessment"):
     selected_use_case = st.radio(
         "Choose the path that best describes your goals:",
         list(ENGINEER_USE_CASES.keys()),
-        help="This will determine your personalized learning plan and focus areas"
+        help="This will determine your personalized learning plan and focus areas",
+        index=None
     )
     
-    # Show details of selected use case
+    # Show details of selected use case - dynamically updates
     if selected_use_case:
         st.info(f"**Selected Path:** {selected_use_case}")
         use_case_info = ENGINEER_USE_CASES[selected_use_case]
@@ -425,7 +429,7 @@ with st.form("engineer_ai_assessment"):
             ["Theory first", "Immediate practice", "Project-based", "Experiment-driven", "Guided tutorials"]
         )
     
-    # Show selected timeline plan
+    # Show selected timeline plan - dynamically updates
     if timeline_preference:
         st.markdown(f"### 📅 Your Selected Timeline: {timeline_preference}")
         plan_info = TIMELINE_PLANS[timeline_preference]
@@ -638,7 +642,7 @@ if submitted:
         
         # Success message and personalized plan
         if email_sent:
-            st.success(f"✅ Thank you, {name}! Your assessment has been saved and DrC has been notified at coyle@smu.edu.")
+            st.success(f"✅ Thank you, {name}! Your assessment has been saved and Dr. C has been notified at coyle@smu.edu.")
             st.balloons()
         else:
             st.warning(f"✅ Thank you, {name}! Your assessment was recorded (but email notification failed - check logs).")
