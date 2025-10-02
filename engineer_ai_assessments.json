@@ -84,5 +84,91 @@
       "most_exciting": "create startup",
       "ideal_outcome": "ceo"
     }
+  },
+  {
+    "timestamp": "2025-10-02T11:46:23.324905",
+    "personal_info": {
+      "name": "franco baldi",
+      "email": "ee@gmail.com",
+      "linkedin": "",
+      "location": "",
+      "engineering_discipline": "Aerospace",
+      "years_experience": "10-15 years",
+      "previous_title": "manager",
+      "company_industry": "tech",
+      "layoff_date": "Currently employed",
+      "financial_runway": "<3 months"
+    },
+    "situation": {
+      "employment_status": "Exploring options",
+      "job_timeline": "Within 3 months",
+      "urgency_level": "Committed to pivot",
+      "geographic_flexibility": "Must stay local",
+      "industry_pivot": "Adjacent industry"
+    },
+    "use_case": {
+      "selected": "Practical Implementers",
+      "details": {
+        "description": "Hands-on engineers wanting to implement AI in current industry",
+        "goal": "Stay in industry but become the AI expert",
+        "timeline": "3-9 months for applied skills",
+        "focus": "Industry-specific AI tools, automation, practical applications",
+        "example": "Civil Engineer → Smart Infrastructure AI Specialist"
+      }
+    },
+    "technical_background": {
+      "programming_exp": "Some programming",
+      "programming_languages": [
+        "Java"
+      ],
+      "python_level": "Basic scripts",
+      "data_analysis_exp": "Excel only",
+      "math_comfort": "Comfortable",
+      "learning_preference": "Hands-on projects"
+    },
+    "ai_knowledge": {
+      "ai_understanding": "Heard buzzwords",
+      "ai_tools_used": [],
+      "ai_interests": [
+        "Automation/robotics"
+      ],
+      "biggest_concern": "Job displacement fears"
+    },
+    "learning_preferences": {
+      "study_time": "<5 hours",
+      "learning_formats": [
+        "Text/articles"
+      ],
+      "timeline_preference": "3-Month Sprint",
+      "audio_context": [
+        "Commuting/car"
+      ],
+      "video_preference": "Short clips (<10min)",
+      "hands_on_style": "Theory first"
+    },
+    "career_goals": {
+      "pivot_motivation": "Financial necessity",
+      "target_roles": [
+        "AI product manager"
+      ],
+      "income_expectations": "Significant decrease acceptable",
+      "industry_target": "Stay in current industry",
+      "role_preference": "Individual contributor"
+    },
+    "resources": {
+      "learning_budget": "$100-500",
+      "equipment_status": "Need new computer",
+      "home_environment": "Poor/distracting",
+      "family_support": "Neutral"
+    },
+    "py4ai_interest": {
+      "python_ai_interest": "Curious",
+      "py4ai_course_interest": "Sounds interesting"
+    },
+    "open_responses": {
+      "biggest_challenge": "unknown ",
+      "most_exciting": "create startup",
+      "ideal_outcome": "ceo"
+    }
   }
 ]
